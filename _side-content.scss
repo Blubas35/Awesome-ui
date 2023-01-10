@@ -1,0 +1,429 @@
+.side-content {
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 150px;
+        margin-top: 150px;            
+        .features-item-rental {
+            width: 100%;
+            display: flex;
+
+            @include xl {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            }
+            .rental-left {
+                width: 40%;
+                
+                @include xl {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;                        
+                }
+
+                @include sm {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+
+                .rental-left-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: $spacing-medium;
+                    flex-direction: column;
+                    width: 80%;
+                    position: relative;
+
+                    @include sm {
+                        margin-bottom: $spacing-medium;
+                        width: 100%;
+                    }
+
+                    .left-content-title-wrapper {
+                        .rental-left-sub-title {
+                            margin: 0;
+
+                            .rectangle {
+                                position: absolute;
+                                left: -273px;
+                                top: -$spacing-medium;
+                            }
+                        }
+
+                        .rental-left-title {
+                            margin: 0;
+                        }
+                    }
+
+                    .rental-left-description {}
+
+                    .rental-left-button {
+                        @include xxl {
+                            width: 100%;
+                        }
+                        @include xl {
+                            width: 50%;
+                        }
+
+                        @include md {
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+
+            .rental-right {
+                width: 60%;
+
+                @include xl {
+                    width: 100%;                        
+                }
+
+                .rental-right-content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    width: 100%;
+                    height: 100%;
+                    row-gap: $spacing-large;
+
+                    @include xl {
+                        justify-self: center;                            
+                    }
+
+                    @include sm {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        column-gap: $spacing-medium;
+                    }
+
+                    .rental-right-content-item {
+                        width: 80%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        padding: 45px 40px;
+
+                        @include xl {
+                            justify-self: center;                                
+                        }
+
+                        @include sm {
+                            padding: $spacing-medium 0;
+                            width: calc(50% - 30px);
+                        }
+                        .boat-hover {
+                            display: none;
+                        }
+                        .bus-hover {
+                            display: none;
+                        }
+                        &:hover {
+                            background-color: white;
+                            box-shadow: 0px 2px 5px 1px rgba(0 0 0 / 0.1);
+                            border-radius: 5px;
+                            .boat-hover,
+                            .bus-hover {
+                                display: block;
+                            }
+                            .boat,
+                            .bus,
+                            .car,
+                            .train {
+                                display: none;
+                            }
+                            .rental-right-content-item-logo {
+                                background-color: #647B64;
+                            }
+
+                          }
+
+                        .rental-right-content-item-logo {
+                            height: 48px;
+                            width: 48px;
+                            background-color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 10px;
+
+                        }
+                    }
+
+                    .rental-right-content-item-title {
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 27px;
+                    }
+
+                    .rental-right-content-item-description {
+                        @include sm {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .features-item-list {
+            width: 100%;
+            .features-item-list-content {  
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: $spacing-large;                     
+                .features-item-list-content-title {
+                    text-align: center;
+                    .sub-title {
+                        margin: 0;
+                    }
+                    .title {
+                        margin: 0;
+                    }
+                }
+                .features-item-list-content-motconsectet-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: $spacing-large;
+                    justify-content: space-between;
+
+                    @include xl {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        row-gap: $spacing-large;
+                        column-gap: $spacing-large;                            
+                    }
+
+                    @include sm {
+                        display: flex;
+                    }
+                     
+                        .features-item-list-content-motconsectet {
+                            width: calc((100% - 100px) / 3);
+                            padding: 80px $spacing-large;
+                            position: relative;
+
+                            @include xl {
+                                width: 100%;
+                            }
+
+                            &#third {
+                                @include xl {
+                                    grid-row: 2 / 3;
+                                    grid-column: 1 / 3;
+                                    justify-self: center;
+                                    width: 50%;                                  
+                                }
+
+                                @include sm {
+                                    width: 100%;
+                                }
+                            }
+
+                            .features-item-list-content-motconsectet-card-wrapper {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                row-gap: $spacing-small;
+                                .features-item-list-content-motconsectet-logo {
+        
+                                }
+                                .features-item-list-content-motconsectet-title {
+        
+                                }
+                                .features-item-list-content-motconsectet-description {
+        
+                                }
+                                .background-images-1 {
+                                    position: absolute;
+                                    right: -195px;
+                                    bottom: -52px;
+                                    z-index: -1;
+                                }
+                                .background-images-2 {
+                                    position: absolute;
+                                    left: -41px;
+                                    bottom: -52px;
+                                    z-index: -1;
+                                }
+                            }
+                        }                             
+                }
+            }
+        }
+
+        .features-item-review {
+            width: 100%;
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                column-gap: 100px;
+                position: relative;       
+                
+                @include xxl {
+                    column-gap: $spacing-large;                        
+                }
+                @include lg {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    column-gap: $spacing-large;
+                }
+                .image-wrapper {
+
+                    @include xxl {
+                        width: 90%;
+                    }
+
+
+                    @include lg {
+                        width: 100%;
+                        position: absolute;
+                        left: -309px;
+                        top: -1%;
+                        bottom: 20%;
+                        z-index: -1;                        
+                    }
+
+                    .third-section-picture {
+                        @include xxl {
+                            width: 100%;
+                        }
+                        @include lg {
+                            width: 60%;
+                        }
+                        @include md {
+                            width: 53%;
+                        }
+                        @include sm {
+                            width: 65%;
+                        }
+                    }
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    row-gap: $spacing-small;
+                    width: 100%;
+
+                    @include xxl {
+                        width: 100%;
+                    }
+                    
+                    @include lg {
+                        margin-left: auto;
+                        margin-top: 80px;
+                        width: 70%;                        
+                    }
+                    @include md {
+                        width: 80%;
+                    }
+
+                    @include sm {
+                        padding-left: 50px;
+                        margin-top: $spacing-small;
+                    }
+
+                    @include xsm {
+                        width: 100%;
+                    }
+                    @include xsm {
+                        width: 100%;
+                    }
+                    .sub-title {
+
+                    }
+                    .title {
+
+                    }
+                    .description {
+                        width: 80%;
+                    }
+
+                    .button {
+                        margin-top: $spacing-small;
+
+                        @include xxl {
+                            width: 50%;
+                        }
+
+                        @include xxsm {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .features-item-slider {
+            width: 100%;
+            overflow: hidden;
+            .features-item-slider-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                row-gap: $spacing-medium;                    
+                .slider-header {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 100%;
+                    .slider-header-title {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: $spacing-small;                            
+                    }
+                    .slider-header-button {
+                        display: flex;
+                        column-gap: $spacing-medium;
+                        align-items: center;
+                    }
+                }
+
+                .slider-card-wrapper {
+                    display: flex;
+                    column-gap: 40px;
+                    .card {
+                        background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 40px;
+                        border-radius: 8px;
+                        .card-title-position-image {
+                            display: flex;
+                            flex-direction: row;
+                            .card-image {
+
+                            }
+                            .card-title-position {
+                                display: flex;
+                                flex-direction: column;
+                                .position {
+                                    font-weight: 700;
+                                }
+                                .name {
+                                    color: #4F4F4F;
+                                }
+                            }
+                        }
+                     
+                        .card-description {
+                            p {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

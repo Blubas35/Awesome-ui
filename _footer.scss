@@ -1,0 +1,105 @@
+.awesome-ui-footer {
+    background-color: #F0DCC5;
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: $spacing-medium;
+        padding: 97px 140px;
+        max-width: 1430px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include xl {
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: $spacing-medium;
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include md {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+        .footer-information {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            .information-logo {
+                display: flex;
+                align-items: center;
+                column-gap: $spacing-small;                
+            }
+            .information-content {
+    
+            }
+            .information-copyright {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+            .footer-social-media {
+                display: flex;
+                column-gap: $spacing-small;            
+                .instagram {
+    
+                }
+                .basketball {
+    
+                }
+                .twitter {
+    
+                }
+                .youtube {
+    
+                }
+            }
+        }
+        .footer-company {
+            .company-lorem-list {
+                @include sm {
+                    padding: 0;
+                }
+                .company-lorem-item {
+                    list-style-type: none;
+                    padding-bottom: 12px;                    
+                }
+            }
+        }  
+        .footer-support {
+            .support-lorem-list {
+                @include sm {
+                    padding: 0;
+                }
+                .support-lorem-item {
+                    list-style-type: none;
+                    padding-bottom: 12px;    
+                }
+            }
+        }
+        .text-area {
+            .text-area-title {
+                margin-bottom: 0;
+              }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                @include md {
+                    width: 70%;
+                }
+                .text-area-button {
+                    @include sm {
+                        width: 50%;
+                    }
+                }
+              }
+        }
+    }
+}

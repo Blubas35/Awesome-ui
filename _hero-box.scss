@@ -1,0 +1,106 @@
+
+.hero-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include md {
+        flex-wrap: nowrap;
+    }
+
+    .hero-box-image-wrapper {
+        position: relative;
+
+        @include md {
+            width: 40%;
+            position: absolute;
+            right: -16%;
+        }
+
+        // @include sm {
+        //     display: none;
+        // }
+        svg {
+            @include md {
+                width: 100%;
+                margin-top: $spacing-large;
+            }
+        
+        }
+    }
+    .hero-box-content-wrapper {
+        width: 50%;
+
+        @include md {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .hero-box-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 85%;
+            row-gap: $spacing-small;
+
+            @include md {
+                width: 70%;
+            }
+
+            @include sm {
+                width: 90%;
+            }
+
+            .hero-content-title {
+                font-family: 'roboto';
+                margin-bottom: 0;
+                position: relative;
+            }
+
+            .hero-box-content-info {
+                margin: 0;
+                @include md {
+                    width: 70%;
+                }
+            }
+
+            .hero-box-button {
+                background-color: green;
+                color: white;
+                padding: $spacing-small 25px;
+                border-radius: 3px;
+                width: 72%;
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                position: relative;
+
+                @include md {
+                    width: 50%;
+                }
+                @include sm {
+                    width: 50%;
+                }
+            }
+            .eclipse-rutuliai-mazas {
+                position: absolute;
+            }        
+        }
+    }
+
+    
+    .eclipse-rutuliai-vidutinis {
+        position: absolute;
+        left: -107px;
+        top: 422px;
+    }
+
+    .eclipse-rutuliai-didesnis {
+        position: absolute;
+        top: 91px;
+    }
+}
