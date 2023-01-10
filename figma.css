@@ -112,7 +112,7 @@
 }
 @media screen and (max-width: 799px) {
   .hero-box .hero-box-content-wrapper .hero-box-content {
-    width: 100%;
+    width: 90%;
   }
 }
 .hero-box .hero-box-content-wrapper .hero-box-content .hero-content-title {
