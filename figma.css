@@ -350,24 +350,33 @@
 }
 .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
   display: flex;
-  flex-wrap: wrap;
   -moz-column-gap: 50px;
        column-gap: 50px;
   justify-content: space-between;
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 999px) {
   .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 50px;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
+    max-width: 700px;
   }
 }
 @media screen and (max-width: 799px) {
   .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
-    display: flex;
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 669px) {
+  .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list {
+    max-width: 350px;
   }
 }
 .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list .features-item-list-content-motconsectet {
@@ -375,17 +384,9 @@
   padding: 80px 50px;
   position: relative;
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1299px) {
   .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list .features-item-list-content-motconsectet {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1099px) {
-  .side-content .features-list .features-item-list .features-item-list-content .features-item-list-content-motconsectet-list .features-item-list-content-motconsectet#third {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    justify-self: center;
-    width: 50%;
+    min-width: 300px;
   }
 }
 @media screen and (max-width: 799px) {
